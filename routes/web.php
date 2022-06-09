@@ -17,7 +17,8 @@ Route::get('/', function () {
     $comics = config('db.comics');
     $banner = config('db.banner');
     $navItems = config('db.navItems');
+    $footerLinks = config('db.footerLinks');
     
-    return view('comics', compact('comics','banner','navItems'));
+    return view('comics', compact('comics','banner','navItems','footerLinks'));
 })->name('comics');
 

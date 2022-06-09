@@ -200,3 +200,52 @@ h5 {
 
 }
 }
+
+/* Footer */
+
+footer {
+    .footer_wrapper {
+      background: url("../img/footer-bg.jpg");
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .container > .row {
+        height: 28rem;
+        align-items: center;
+        .col {
+          color: $dc-light;
+          text-transform: uppercase;
+          text-align: start;
+          margin-right: 1rem;
+          .links_bar {
+            align-items: flex-start;
+          }
+  
+          ul li {
+            margin-bottom: 0.1rem;
+            a {
+              color: $dc-light;
+              opacity: 0.5;
+              font-size: 0.7rem;
+            }
+            h3 {
+              opacity: unset;
+              margin: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+    .footer_banner {
+      background-color: $dc-dark;
+      padding: 2rem;
+      .row {
+        justify-content: space-between;
+  
+        .col img {
+          padding: 0 0.8rem;
+        }
+        
+      }
+    }
+  }

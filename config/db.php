@@ -254,4 +254,49 @@ return [
         "news",
         "shop",
       ],
+      'footerLinks'=> [
+        [ 
+          'title'=> "dc comics",
+         'details'=> [
+            "characters",
+            "comics",
+            "movies",
+            "tv",
+            "games",
+            "collectibles",
+            "videos",
+            "news",
+          ],
+        ],
+        [ 
+          'title'=> "shop",
+         'details'=> ["Shop DC ", "Shop DC Collectibles"],
+        ],
+        [ 
+          'title'=> "DC",
+         'details'=> [
+            "Terms Of Use",
+            "Privacy Policy(New)",
+            "Ad Choices",
+            "Advertising",
+            "Jobs",
+            "Subscriptions",
+            "Talent Workshop",
+            "CPSC Certificates",
+            "Ratings",
+            "Shop Help",
+            "Contact Us",
+          ],
+        ],
+        [ 
+          'title'=> "Sites",
+         'details'=> [
+            "DC",
+            "MAD Magazine",
+            "DC Kids",
+            "DC Universe",
+            "DC Power Visa",
+          ],
+        ],
+      ],
     ];
