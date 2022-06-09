@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header></header>
+    @include('partials.header')
 
     <!-- Aggiungo segnaposto per il contenuto principale -->
     <main>
@@ -22,7 +22,7 @@
 
     </main>
 
-    <footer></footer>
+    @include('partials.footer')
 
     <script src="{{asset('js/app.js')}}"></script>
 </body>
