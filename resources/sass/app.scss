@@ -1,63 +1,10 @@
 //
 @use 'bootstrap';
+@import "./partials/colors";
+@import "./partials/utilities";
 
-$dc-primary: #0282f9;
-$dc-dark:#1c1c1c;
-$dc-dark-light: #4d5661;
-$dc-light: #ffffff;
 
-body {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    font-family: "Montserrat", sans-serif;
-}
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Utility */
-
-.container {
-    width: 70%;
-    max-width: 1440px;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-button {
-    border: transparent;
-    color: $dc-light;
-    padding: 1rem;
-    background-color: unset;
-    border: 2px solid $dc-primary;
-    text-transform: uppercase;
-}
 
 /* Header */
 
@@ -95,6 +42,8 @@ header {
       }
     }
   }
+
+
 
 /* Main */
 main{
