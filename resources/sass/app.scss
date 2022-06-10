@@ -166,8 +166,16 @@ main{
   margin: 1rem 0;
 }
 
+.metadata{
+  padding: 2.5rem 0 1rem;
+  background-color: $dc-bg-light;
+}
+
  .metadata h5{
   color: $dc-primary-dark;
+  font-size: 1rem;
+  font-weight: bold;
+  
 } 
 /* Footer */
 

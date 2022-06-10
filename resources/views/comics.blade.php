@@ -12,18 +12,21 @@
                 </button>
             </div>
             <div class="row ">
-                @foreach($comics as $comic)
+                @foreach($comics as $index => $comic)
                 <div class="col-2">
-                    <div class="card_">
-                        <div class="product">
-                            <div class="product_img">
-                                <img class="img-fluid" src="{{$comic['thumb']}}" alt="image of {{$comic['title']}}">
+                    <a href=" {{ route ('comics.show', $index) }}">
+                        <div class="card_">
+                            <div class="product">
+                                <div class="product_img">
+                                    <img class="img-fluid" src="{{$comic['thumb']}}" alt="image of {{$comic['title']}}">
 
+                                </div>
+                                <h5 class="pb-2">{{$comic['series']}}</h5>
                             </div>
-                            <h5 class="pb-2">{{$comic['series']}}</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
+                
 
                 @endforeach
 

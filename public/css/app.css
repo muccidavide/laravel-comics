@@ -10410,8 +10410,15 @@ main .main_navigation .item_title {
   margin: 1rem 0;
 }
 
+.metadata {
+  padding: 2.5rem 0 1rem;
+  background-color: #f6f6f6;
+}
+
 .metadata h5 {
   color: #003f5e;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 /* Footer */

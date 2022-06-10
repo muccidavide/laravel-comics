@@ -30,8 +30,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="metadata">
+    </div>
+    <div class="metadata">
+        <div class="container text-start mb-3 ">
             <div class="row row-cols-2 align-items-start">
                 <div class="col">
                     <h4>Talent</h4>
@@ -54,7 +55,7 @@
 
                     <div class="written d-flex justify-content-between">
                         <div>
-                            <h5 >Written by:</h5>
+                            <h5>Written by:</h5>
                         </div>
                         <div class="authors w-75 color_primary_light">
                             <p>

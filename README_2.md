@@ -186,8 +186,6 @@ Route::get('/products/{id}', function ($id) {
     
     $products = config('db.products');
 
-    $dd(id);
-
     if ($id >= 0 && is_numeric($id) && $id < count($products)){
 
         $pasta = $products[$id];
@@ -212,7 +210,7 @@ uso index nel ciclio foreach($index => $pasta) per renderizzare il prodotto e us
 
 ```php 
 
-<a> href=" {{ route ('products.show', $index) }}"</a>
+<a href=" {{ route ('pasta.show', $index) }}"></a>
 
 
 ```
