@@ -1,17 +1,8 @@
 @extends('layouts.app')
 
-@section('content')
-
-
+@section('main-content')
 
 <main>
-
-
-    <div class="jumbotron">
-        <img src="../img/jumbotron.jpg" alt="">
-    </div>
-
-
     <div class="products">
 
         <div class="container">
@@ -21,26 +12,20 @@
                 </button>
             </div>
             <div class="row ">
-                @forelse($comics as $comic)
+                @foreach($comics as $comic)
                 <div class="col-2">
                     <div class="card_">
                         <div class="product">
                             <div class="product_img">
-                                <img class="img-fluid" src="{{$comic['thumb']}}" alt="">
+                                <img class="img-fluid" src="{{$comic['thumb']}}" alt="image of {{$comic['title']}}">
 
                             </div>
-                            <h5 class="pb-2">{{$comic['title']}}</h5>
+                            <h5 class="pb-2">{{$comic['series']}}</h5>
                         </div>
                     </div>
                 </div>
 
-
-                @empty
-                <div class="col">
-                    <p>No Products to show!</p>
-                </div>
-
-                @endforelse
+                @endforeach
 
                 <div>
                     <button class="load_btn">Load More</button>
@@ -55,8 +40,8 @@
             <div class="row">
                 @foreach($banner as $item)
                 <div class="col">
-                    <img src="{{ $item['src'] }}" :alt="item.text" />
-                    <h5>{{ $item['text'] }}</h5>
+                    <img src="{{ $item['src'] }}" :alt="image of {{ $item['text'] }}" />
+                    <h5 class="item_title">{{ $item['text'] }}</h5>
                 </div>
                 @endforeach
             </div>

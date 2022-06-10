@@ -1,3 +1,11 @@
+@php 
+
+$footerLinks = config('db.footerLinks');
+
+@endphp
+
+
+
 <footer id="footer_site">
         <div class="footer_wrapper">
             <div class="container">
@@ -53,7 +61,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <img class="logo_bg" src="../img/dc-logo-bg.png" alt="" />
+                        <img class="logo_bg" src="{{asset('img/dc-logo-bg.png')}}" alt="dc logo" />
                     </div>
                 </div>
             </div>
@@ -67,11 +75,11 @@
                         </button>
                     </div>
                     <div class="col">
-                        <img src="../img/footer-facebook.png" alt="facebook icon" />
-                        <img src="../img/footer-twitter.png" alt="twitter icon" />
-                        <img src="../img/footer-youtube.png" alt="youtube icon" />
-                        <img src="../img/footer-pinterest.png" alt="pinterest icon" />
-                        <img src="../img/footer-periscope.png" alt="periscope icon" />
+                        <img src="{{ asset('../img/footer-facebook.png') }}" alt="facebook icon" />
+                        <img src="{{ asset('../img/footer-twitter.png') }}" alt="twitter icon" />
+                        <img src="{{ asset('../img/footer-youtube.png') }}" alt="youtube icon" />
+                        <img src="{{ asset('../img/footer-pinterest.png') }}" alt="pinterest icon" />
+                        <img src="{{ asset('../img/footer-periscope.png') }}" alt="periscope icon" />
                     </div>
                 </div>
             </div>

@@ -41,14 +41,11 @@ header {
         color:  $dc-primary;
       }
     }
+
+
   }
 
-
-
-/* Main */
-main{
-
-.jumbotron {
+  .jumbotron {
     height: 450px;
     overflow: hidden;
 
@@ -58,7 +55,17 @@ main{
     }
 }
 
+
+
+/* Main */
+main{
+
+
+
 .products {
+  h5 {
+    color: $dc-light;
+}
     background-color: $dc-dark;
 
     .container {
@@ -106,9 +113,7 @@ main{
     }
 }
 
-h5 {
-    color: $dc-light;
-}
+
 
 .main_navigation {
     background-color: #0282f9;
@@ -134,6 +139,10 @@ h5 {
             color: white;
         }
     }
+
+    .item_title{
+      font-size: 2rem;
+    }
 }
 
 
@@ -150,6 +159,16 @@ h5 {
 }
 }
 
+.price_aviability{
+  background: #55ba59;
+  padding: 0.8rem;
+  color: white;
+  margin: 1rem 0;
+}
+
+ .metadata h5{
+  color: $dc-primary-dark;
+} 
 /* Footer */
 
 footer {

@@ -16,9 +16,8 @@
 <body>
     @include('partials.header')
 
-    <!-- Aggiungo segnaposto per il contenuto principale -->
     <main>
-        @yield('content')
+        @yield('main-content')
 
     </main>
 
