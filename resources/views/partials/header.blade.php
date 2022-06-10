@@ -16,7 +16,7 @@ $navItems = config('db.navItems');
                 <ul class="row mb-0 p-1">
                     @foreach($navItems as $link)
                     <li class="col">
-                        <a href="#">{{ $link }}</a>
+                        <a href="{{route($link)}}">{{ $link }}</a>
                     </li>
                     @endforeach
                 </ul>
