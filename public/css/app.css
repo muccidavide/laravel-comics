@@ -10313,12 +10313,14 @@ header nav li {
   text-transform: uppercase;
   padding-bottom: 0.2rem;
 }
-header nav .active, header nav li:hover {
+header nav .active,
+header nav li:hover {
   color: #0282f9;
   border-bottom: 3px solid #0282f9;
   margin-bottom: -3px;
 }
-header nav .active a, header nav li:hover a {
+header nav .active a,
+header nav li:hover a {
   color: #0282f9;
 }
 
@@ -10386,7 +10388,7 @@ main .main_navigation .row .col {
   width: 20%;
 }
 main .main_navigation .row .col img {
-  height: 4rem;
+  height: 3rem;
   margin: 0 1rem;
 }
 main .main_navigation .row .col h5 {
@@ -10395,12 +10397,12 @@ main .main_navigation .row .col h5 {
   color: white;
 }
 main .main_navigation .item_title {
-  font-size: 2rem;
+  font-size: 0.7rem;
 }
-@media screen and (max-width: 992px) {
-  main .main_navigation .row .row > .col {
-    width: 33.3333333333%;
-  }
+
+.blue_row {
+  background-color: #0282f9;
+  height: 80px;
 }
 
 .price_aviability {
@@ -10419,6 +10421,25 @@ main .main_navigation .item_title {
   color: #003f5e;
   font-size: 1rem;
   font-weight: bold;
+}
+
+.metadata p {
+  margin-bottom: 0;
+}
+
+.metadata .art,
+.metadata .written,
+.metadata .series,
+.metadata .price,
+.metadata .on_sale {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(166, 166, 166);
+}
+
+.poster {
+  position: absolute;
+  top: -360px;
+  left: 0;
 }
 
 /* Footer */
@@ -10462,4 +10483,10 @@ footer .footer_banner .row {
 }
 footer .footer_banner .row .col img {
   padding: 0 0.8rem;
+}
+
+@media screen and (max-width: 992px) {
+  .main_navigation .row .row > .col {
+    width: 33.3333333333%;
+  }
 }

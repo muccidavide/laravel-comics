@@ -5,13 +5,13 @@
 <main>
     <div class="products">
 
-        <div class="container">
+        <div class="container ">
             <div>
                 <button class="series_btn">
                     <h2>Current Series</h2>
                 </button>
             </div>
-            <div class="row ">
+            <div class="row pt-5">
                 @foreach($comics as $index => $comic)
                 <div class="col-2">
                     <a href=" {{ route ('comics.show', $index) }}">

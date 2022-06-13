@@ -14,12 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('db.comics');
-    $banner = config('db.banner');
-   
     
-    return view('comics', compact('comics','banner'));
-})->name('comics');
+    return redirect('comics');
+})->name('home');
 
 
 Route::get('/comics/{id}', function ($id) {
@@ -54,7 +51,7 @@ Route::get('/comics', function () {
     $banner = config('db.banner');
    
     
-    return view('comics', compact('comics','banner'));
+    return view('comics.comics', compact('comics','banner'));
 })->name('comics');
 
 Route::get('/movies', function () {   

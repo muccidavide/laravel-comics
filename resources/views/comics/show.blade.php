@@ -3,7 +3,9 @@
 @section('main-content')
 
 <div class="wrapper ">
-    <div class="container text-start m-auto">
+    <div class="blue_row">
+    </div>
+    <div class="container text-start m-auto position-relative">
         <div class="row my-5">
             <div class="col-8">
                 <h3 class="fw-bold">{{ $comic['title'] }}</h3>
@@ -26,17 +28,23 @@
 
             <div class="col-3">
                 <div class="ban_box">
-                    <img src=" {{ $comic['thumb'] }}" alt="cover of {{ $comic['title'] }}">
+                    <img src=" {{ asset('img\adv.jpg') }}" alt="cover of {{ $comic['title'] }}">
                 </div>
             </div>
         </div>
+        <div class="poster">
+            <img src="{{ $comic['thumb']}}" alt="">
+
+        </div>
+
     </div>
+
     <div class="metadata">
         <div class="container text-start mb-3 ">
             <div class="row row-cols-2 align-items-start">
                 <div class="col">
                     <h4>Talent</h4>
-                    <div class="art mt-4 d-flex justify-content-between">
+                    <div class="art pt-4 d-flex justify-content-between">
                         <div>
                             <h5>Art by:</h5>
                         </div>
@@ -75,7 +83,7 @@
                 <div class="col ">
                     <div class="specs">
                         <h4>Specs</h4>
-                        <div class="series mt-4 d-flex justify-content-between">
+                        <div class="series pt-4 d-flex justify-content-between">
                             <div>
                                 <h5>Series:</h5>
                             </div>
@@ -114,7 +122,12 @@
             </div>
         </div>
     </div>
+
+
+
 </div>
+
+
 
 
 @endsection
