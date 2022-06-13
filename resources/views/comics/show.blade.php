@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', $comic['title'])
+
 @section('main-content')
 
 <div class="wrapper ">
@@ -17,7 +19,6 @@
                     <div class="check">
                         <span>Check</span>
                     </div>
-
                 </div>
                 <div class="col">
                     <p>
@@ -25,7 +26,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="col-3">
                 <div class="ban_box">
                     <img src=" {{ asset('img\adv.jpg') }}" alt="cover of {{ $comic['title'] }}">
@@ -34,9 +34,7 @@
         </div>
         <div class="poster">
             <img src="{{ $comic['thumb']}}" alt="">
-
         </div>
-
     </div>
 
     <div class="metadata">
@@ -51,7 +49,11 @@
                         <div class="artist w-75 color_primary_light ">
                             <p>
                                 @forelse($comic['artists'] as $artist)
-                                {{ $artist }},
+                                {{ $artist }}
+                                @if (!$loop->last),
+                                
+                                @endif
+
 
                                 @empty
                             <p>No Artist Found</p>
@@ -68,8 +70,8 @@
                         <div class="authors w-75 color_primary_light">
                             <p>
                                 @forelse($comic['writers'] as $writer)
-                                {{ $writer }},
-
+                                {{ $writer }}@if(!$loop->last),
+                                @endif
                                 @empty
                             <p>No writer Found</p>
 
@@ -77,7 +79,6 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col ">
@@ -111,23 +112,15 @@
                             </div>
                             <div class="w-75 color_primary_light">
                                 <p>
-                                    {{ $comic['sale_date']}}
+                                    {{ DateTime::createFromFormat('Y-m-d',$comic['sale_date'])->format('M d Y')}}
                                 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
-
-
-
 </div>
-
-
-
 
 @endsection

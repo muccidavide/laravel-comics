@@ -10431,9 +10431,15 @@ main .main_navigation .item_title {
 .metadata .written,
 .metadata .series,
 .metadata .price,
-.metadata .on_sale {
+.metadata .on_sale,
+.metadata h4 {
   padding: 0.5rem;
-  border-bottom: 1px solid rgb(166, 166, 166);
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 0.5rem;
+}
+.metadata p {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .poster {
@@ -10448,6 +10454,7 @@ footer .footer_wrapper {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 2rem 0;
 }
 footer .footer_wrapper .container > .row {
   height: 28rem;

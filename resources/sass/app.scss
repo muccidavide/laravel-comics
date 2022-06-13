@@ -147,7 +147,7 @@ main {
     }
 
 
-    
+
 }
 
 .blue_row {
@@ -187,10 +187,17 @@ main {
     .written,
     .series,
     .price,
-    .on_sale {
+    .on_sale,
+    h4 {
         padding: 0.5rem;
-        border-bottom: 1px solid rgb(166, 166, 166);
-  }
+        border-bottom: 1px solid #d8d8d8;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
 }
 
 
@@ -209,6 +216,7 @@ footer {
         overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
+        padding: 2rem 0;
 
         .container>.row {
             height: 28rem;
@@ -258,13 +266,13 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-  .main_navigation {
-      .row {
-          .row>.col {
-              width: calc(100%/3);
-          }
+    .main_navigation {
+        .row {
+            .row>.col {
+                width: calc(100%/3);
+            }
 
-      }
-  }
+        }
+    }
 
 }

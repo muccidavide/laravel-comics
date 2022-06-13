@@ -15,9 +15,8 @@ $navItems = config('db.navItems');
             <nav class="nav_site col">
                 <ul class="row mb-0 p-1">
                     @foreach($navItems as $link)
-                    <li class="col">
-                        <a href="{{route($link)}}">{{ $link }}</a>
-                    </li>
+                    <li class="col {{ substr(Route::currentRouteName(), 0, strlen($link)) === $link ? 'active' : '' }}>
+                        <a href="{{route($link)}}" ">{{ $link }}</a>                    </li>
                     @endforeach
                 </ul>
             </nav>

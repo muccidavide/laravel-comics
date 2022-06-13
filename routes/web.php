@@ -33,15 +33,12 @@ Route::get('/comics/{id}', function ($id) {
     }else{
         abort(404);
     }
-   
-    
-    
     return view('comics', compact('comic','banner'));
 })->name('comics.show');
 
 Route::get('/characters', function () {   
     
-    return "characters page here";
+    return view('characters');
 })->name('characters');
 
 /* Double comics as homepage and comics page */
@@ -51,7 +48,7 @@ Route::get('/comics', function () {
     $banner = config('db.banner');
    
     
-    return view('comics.comics', compact('comics','banner'));
+    return view('comics.index', compact('comics','banner'));
 })->name('comics');
 
 Route::get('/movies', function () {   
